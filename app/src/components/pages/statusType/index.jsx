@@ -1,26 +1,21 @@
 import React, { useState } from 'react';
 import { Formik, Form, useField } from "formik";
 import { drizzleReactHooks } from "@drizzle/react-plugin"
-import { useToast } from "@chakra-ui/react"
+import SimpleAlerts from '../../alert'
 import * as Yup from "yup";
 import DashBoardLayout from '../../layout/dashboardLayout'
-import toastSetup from '../../../utility/toast'
 import './index.css'
 
 const MyTextInput = ({ label, ...props }) => {
     const [field, meta] = useField(props);
     return (
       <>
-        <label htmlFor={props.id || props.name}>{label}</label>
+        <label className="label__container" htmlFor={props.id || props.name}>{label}</label>
         <input className="text-input" {...field} {...props} />
           <div className={meta.touched && meta.error ? 'error_active' : 'error_hidden'}>{meta.error|| "hello"}</div>
       </>
     );
   };
-
-
-
-
 
 const StatusType = () => {
     const [stackId, setStackId] = useState(null);
@@ -28,37 +23,20 @@ const StatusType = () => {
     const {drizzle} = useDrizzle();
     const state = useDrizzleState(state => state);
 
-    const toast = useToast()
-    const {setting} = toastSetup;
-
-    const callToast = (status, description) => {
-      toast({
-        ...setting,
-        title:
-          status === "success"
-            ? "success"
-            : "failed",
-        description: `${status === "success" ? "Success" : "Error"} message: ${description}`,
-        status,
-      })
-    }
-
     // get the transaction states from the drizzle state
     const { transactions, transactionStack } = state;
     const getTxStatus = () => {
-        console.log(stackId, 'this is the stackId>>')
         // get the transaction hash using our saved `stackId`
         const txHash = transactionStack[stackId];
-        console.log(txHash, 'this is the txHash>>')
         // if transaction hash does not exist, don't display anything
         if (!txHash) return null;
-      
-        // otherwise, return the transaction status
-        if(transactions[txHash]) {
-            console.log(transactions[txHash].status)
-           // callToast(transactions[txHash].status, 'transaction successful');
-            return transactions[txHash] && transactions[txHash].status;
-      };
+
+          return transactions[txHash] && (
+            <SimpleAlerts 
+            severity={transactions[txHash].status}
+            message={`transaction ${transactions[txHash].status}`}
+            ></SimpleAlerts>
+            );
     }
    const submitStatus = (name) => {
         const contract = drizzle.contracts.JurStatus;
@@ -83,17 +61,17 @@ const StatusType = () => {
                   .required("status Type is Required")
               })}
               onSubmit={async (values, { setSubmitting }) => {
-                submitStatus(values.statusType);
-                setSubmitting(false);
+               submitStatus(values.statusType);
+               setSubmitting(false);
               }}
             >
              {({ isSubmitting }) => (
               <Form className="form">
                 <MyTextInput
-                  label="Status Type"
+                  label="StatusType"
                   name="statusType"
                   type="text"
-                  placeholder="Jane"
+                  placeholder="active"
                 />
                 <button type="submit" className="submit__active" disabled={isSubmitting}>Submit</button>
               </Form>
@@ -112,6 +90,6 @@ const StatusType = () => {
             </DashBoardLayout>
         </section>
     );
-  }
+};
 
 export default StatusType;

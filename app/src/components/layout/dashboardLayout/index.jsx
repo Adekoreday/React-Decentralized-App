@@ -1,7 +1,7 @@
 import React, { useState, Suspense } from 'react';
+import Aside from '../../aside'
 import "./index.css"
 
-const Aside = React.lazy(() => import('../../aside'));
 const DashBoardLayout = (props) => {
     const [toggle, setToggle] = useState(false);
     return (
@@ -9,7 +9,7 @@ const DashBoardLayout = (props) => {
               <Suspense fallback={<div>Loading...</div>}>
                  <Aside />
               </Suspense>
-            <div>{props.children}</div>
+            <div className="dashboard__content">{props.children}</div>
         </section>
     );
 };

@@ -6,6 +6,10 @@
     font-size: 1.6rem;
 }
 
+.dashboard__content{
+    display: flex;
+    flex-direction: column;
+}
 
 .dashboard__container--minified{
     grid-template-columns: 10% 80%;

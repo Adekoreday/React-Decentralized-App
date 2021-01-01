@@ -1,6 +1,5 @@
 import React from "react";
 import AsideItem from "../asideItem";
-import Proptypes from "proptypes";
 import { useLocation } from "react-router-dom"
 import fields from "./fields";
 import "./index.css";
@@ -11,7 +10,7 @@ const Aside = () => {
     <aside className="aside__container">
       <div className="aside__header">
         <p className="aside__logo">Jur</p>
-        <>
+        <div className="navigation__hamburger">
           <input
             type="checkbox"
             className="navigation__checkbox"
@@ -20,7 +19,7 @@ const Aside = () => {
           <label htmlFor="navi-toggle" className="navigation__button">
             <span className="navigation__icon">&nbsp;</span>
           </label>
-        </>
+        </div>
       </div>
       <div>
           {fields.map((item, i) => {
