@@ -1,0 +1,10 @@
+.aside__item{
+    cursor: pointer;
+    display: flex;
+    color: #85A5C5;
+    margin: 5rem 2rem;
+}
+
+.aside__img{
+    margin-right: 1rem;
+}
