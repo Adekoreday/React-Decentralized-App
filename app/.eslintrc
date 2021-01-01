@@ -1,0 +1,26 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "plugins": ["import", "react", "react-hooks"],
+    "extends": ["plugin:prettier/recommended"],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jest": true,
+        "node": true
+      },
+      "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      },
+    "rules": {
+      "no-console": "warn",
+      "no-eval": "error",
+      "import/first": "error"
+    }
+  }
+  

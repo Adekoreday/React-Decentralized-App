@@ -9,7 +9,7 @@
     "build-prod": "webpack --config ./webpackConfig/webpack.prod.js",
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\"",
     "clean": "rm -rf ./build ",
-    "lint:fix": "eslint 'src/**' --fix",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
     "build": "npm run clean && npm run build-prod",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
@@ -31,11 +31,10 @@
   },
   "homepage": "",
   "dependencies": {
-    "@chakra-ui/react": "^1.1.0",
     "@drizzle/react-plugin": "^1.5.3",
     "@drizzle/store": "^1.5.3",
-    "@emotion/react": "^11.1.4",
-    "@emotion/styled": "^11.0.0",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
     "chromedriver": "^83.0.0",
     "dotenv": "^8.2.0",
     "enzyme": "^3.11.0",
@@ -63,7 +62,7 @@
   },
   "lint-staged": {
     "*.+(js|jsx)": [
-      "eslint  'src/**' --fix",
+      "eslint --fix --ext .js,.jsx .",
       "git add"
     ],
     "*.+(json|css|md)": [
