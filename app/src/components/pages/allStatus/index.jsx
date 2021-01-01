@@ -1,14 +1,14 @@
-import React from 'react';
-import DashBoardLayout from '../../layout/dashboardLayout'
+import React from "react"
+import DashBoardLayout from "../../layout/dashboardLayout"
 
 const AllStatus = () => {
-    return (
-        <section>
-            <DashBoardLayout>
-                <div>all status</div>
-            </DashBoardLayout>
-        </section>
-    );
-};
+  return (
+    <section>
+      <DashBoardLayout>
+        <div>all status</div>
+      </DashBoardLayout>
+    </section>
+  )
+}
 
-export default AllStatus;
+export default AllStatus

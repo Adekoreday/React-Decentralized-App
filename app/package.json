@@ -9,7 +9,7 @@
     "build-prod": "webpack --config ./webpackConfig/webpack.prod.js",
     "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\"",
     "clean": "rm -rf ./build ",
-    "lint:fix": "eslint 'src/**' --fix",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
     "build": "npm run clean && npm run build-prod",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
@@ -62,7 +62,7 @@
   },
   "lint-staged": {
     "*.+(js|jsx)": [
-      "eslint  'src/**' --fix",
+      "eslint --fix --ext .js,.jsx .",
       "git add"
     ],
     "*.+(json|css|md)": [

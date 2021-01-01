@@ -190,24 +190,14 @@
   "ast": {
     "absolutePath": "/Users/adekoreday/Documents/jur/jur-status-smart-contract-master/contracts/JurStatus.sol",
     "exportedSymbols": {
-      "JurStatus": [
-        175
-      ]
+      "JurStatus": [175]
     },
     "id": 176,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.5",
-          ".1",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.5", ".1", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:31:0"
       },
@@ -218,9 +208,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 175,
-        "linearizedBaseContracts": [
-          175
-        ],
+        "linearizedBaseContracts": [175],
         "name": "JurStatus",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -747,10 +735,7 @@
                       "id": 37,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        250,
-                        251
-                      ],
+                      "overloadedDeclarations": [250, 251],
                       "referencedDeclaration": 251,
                       "src": "974:7:0",
                       "typeDescriptions": {
@@ -1022,10 +1007,7 @@
                       "id": 65,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        250,
-                        251
-                      ],
+                      "overloadedDeclarations": [250, 251],
                       "referencedDeclaration": 251,
                       "src": "1580:7:0",
                       "typeDescriptions": {
@@ -1607,10 +1589,7 @@
                       "id": 107,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        250,
-                        251
-                      ],
+                      "overloadedDeclarations": [250, 251],
                       "referencedDeclaration": 251,
                       "src": "2153:7:0",
                       "typeDescriptions": {
@@ -1766,10 +1745,7 @@
                       "id": 116,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        250,
-                        251
-                      ],
+                      "overloadedDeclarations": [250, 251],
                       "referencedDeclaration": 251,
                       "src": "2233:7:0",
                       "typeDescriptions": {
@@ -1920,10 +1896,7 @@
                       "id": 126,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        250,
-                        251
-                      ],
+                      "overloadedDeclarations": [250, 251],
                       "referencedDeclaration": 251,
                       "src": "2332:7:0",
                       "typeDescriptions": {
@@ -2374,10 +2347,7 @@
                       "id": 157,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        250,
-                        251
-                      ],
+                      "overloadedDeclarations": [250, 251],
                       "referencedDeclaration": 251,
                       "src": "2796:7:0",
                       "typeDescriptions": {
@@ -2558,23 +2528,13 @@
     "attributes": {
       "absolutePath": "/Users/adekoreday/Documents/jur/jur-status-smart-contract-master/contracts/JurStatus.sol",
       "exportedSymbols": {
-        "JurStatus": [
-          175
-        ]
+        "JurStatus": [175]
       }
     },
     "children": [
       {
         "attributes": {
-          "literals": [
-            "solidity",
-            ">=",
-            "0.5",
-            ".1",
-            "<",
-            "0.7",
-            ".0"
-          ]
+          "literals": ["solidity", ">=", "0.5", ".1", "<", "0.7", ".0"]
         },
         "id": 1,
         "name": "PragmaDirective",
@@ -2582,18 +2542,12 @@
       },
       {
         "attributes": {
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
+          "baseContracts": [null],
+          "contractDependencies": [null],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
-          "linearizedBaseContracts": [
-            175
-          ],
+          "linearizedBaseContracts": [175],
           "name": "JurStatus",
           "scope": 176
         },
@@ -3037,9 +2991,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 36,
@@ -3058,9 +3010,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -3077,10 +3027,7 @@
                                   "typeString": "literal_string \"Access not granted.\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                250,
-                                251
-                              ],
+                              "overloadedDeclarations": [250, 251],
                               "referencedDeclaration": 251,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -3119,9 +3066,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 247,
                                       "type": "msg",
                                       "value": "msg"
@@ -3138,9 +3083,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 3,
                                   "type": "address",
                                   "value": "owner"
@@ -3202,9 +3145,7 @@
               "implemented": true,
               "isConstructor": true,
               "kind": "constructor",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "",
               "scope": 175,
               "stateMutability": "nonpayable",
@@ -3214,9 +3155,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 48,
@@ -3225,9 +3164,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 49,
@@ -3252,9 +3189,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 3,
                               "type": "address",
                               "value": "owner"
@@ -3278,9 +3213,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 247,
                                   "type": "msg",
                                   "value": "msg"
@@ -3389,9 +3322,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 64,
@@ -3406,9 +3337,7 @@
                   {
                     "attributes": {
                       "argumentTypes": null,
-                      "overloadedDeclarations": [
-                        null
-                      ],
+                      "overloadedDeclarations": [null],
                       "referencedDeclaration": 47,
                       "type": "modifier ()",
                       "value": "onlyOwner"
@@ -3434,9 +3363,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -3453,10 +3380,7 @@
                                   "typeString": "literal_string \"Please provide a valid address.\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                250,
-                                251
-                              ],
+                              "overloadedDeclarations": [250, 251],
                               "referencedDeclaration": 251,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -3483,9 +3407,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 58,
                                   "type": "address",
                                   "value": "_statusHolder"
@@ -3502,9 +3424,7 @@
                                   "isPure": true,
                                   "isStructConstructorCall": false,
                                   "lValueRequested": false,
-                                  "names": [
-                                    null
-                                  ],
+                                  "names": [null],
                                   "type": "address payable",
                                   "type_conversion": true
                                 },
@@ -3608,9 +3528,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 17,
                                   "type": "mapping(address => struct JurStatus.Status storage ref)",
                                   "value": "status"
@@ -3622,9 +3540,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 58,
                                   "type": "address",
                                   "value": "_statusHolder"
@@ -3646,9 +3562,7 @@
                               "isPure": false,
                               "isStructConstructorCall": true,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "struct JurStatus.Status memory",
                               "type_conversion": false
                             },
@@ -3669,9 +3583,7 @@
                                       "typeString": "string storage ref"
                                     }
                                   ],
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 10,
                                   "type": "type(struct JurStatus.Status storage pointer)",
                                   "value": "Status"
@@ -3683,9 +3595,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 249,
                                   "type": "uint256",
                                   "value": "now"
@@ -3724,9 +3634,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 13,
                                       "type": "string storage ref[] storage ref",
                                       "value": "statusTypes"
@@ -3738,9 +3646,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 60,
                                       "type": "uint256",
                                       "value": "_statusType"
@@ -3786,9 +3692,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 19,
                               "type": "uint256",
                               "value": "statusCount"
@@ -3817,9 +3721,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -3840,9 +3742,7 @@
                                   "typeString": "string storage ref"
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 35,
                               "type": "function (address,uint256,string memory)",
                               "value": "StatusAdded"
@@ -3854,9 +3754,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 58,
                               "type": "address",
                               "value": "_statusHolder"
@@ -3868,9 +3766,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 249,
                               "type": "uint256",
                               "value": "now"
@@ -3892,9 +3788,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 13,
                                   "type": "string storage ref[] storage ref",
                                   "value": "statusTypes"
@@ -3906,9 +3800,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 60,
                                   "type": "uint256",
                                   "value": "_statusType"
@@ -4017,9 +3909,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 106,
@@ -4034,9 +3924,7 @@
                   {
                     "attributes": {
                       "argumentTypes": null,
-                      "overloadedDeclarations": [
-                        null
-                      ],
+                      "overloadedDeclarations": [null],
                       "referencedDeclaration": 47,
                       "type": "modifier ()",
                       "value": "onlyOwner"
@@ -4062,9 +3950,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -4081,10 +3967,7 @@
                                   "typeString": "literal_string \"Pleae provide a valid address.\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                250,
-                                251
-                              ],
+                              "overloadedDeclarations": [250, 251],
                               "referencedDeclaration": 251,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -4111,9 +3994,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 100,
                                   "type": "address",
                                   "value": "_statusHolder"
@@ -4130,9 +4011,7 @@
                                   "isPure": true,
                                   "isStructConstructorCall": false,
                                   "lValueRequested": false,
-                                  "names": [
-                                    null
-                                  ],
+                                  "names": [null],
                                   "type": "address payable",
                                   "type_conversion": true
                                 },
@@ -4220,9 +4099,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -4239,10 +4116,7 @@
                                   "typeString": "literal_string \"Address is not a Jur Status holder.\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                250,
-                                251
-                              ],
+                              "overloadedDeclarations": [250, 251],
                               "referencedDeclaration": 251,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -4291,9 +4165,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 17,
                                           "type": "mapping(address => struct JurStatus.Status storage ref)",
                                           "value": "status"
@@ -4305,9 +4177,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 100,
                                           "type": "address",
                                           "value": "_statusHolder"
@@ -4385,9 +4255,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -4404,10 +4272,7 @@
                                   "typeString": "literal_string \"Already in the similar state.\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                250,
-                                251
-                              ],
+                              "overloadedDeclarations": [250, 251],
                               "referencedDeclaration": 251,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -4456,9 +4321,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 17,
                                           "type": "mapping(address => struct JurStatus.Status storage ref)",
                                           "value": "status"
@@ -4470,9 +4333,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 100,
                                           "type": "address",
                                           "value": "_statusHolder"
@@ -4494,9 +4355,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 102,
                                   "type": "bool",
                                   "value": "_newState"
@@ -4575,9 +4434,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 17,
                                       "type": "mapping(address => struct JurStatus.Status storage ref)",
                                       "value": "status"
@@ -4589,9 +4446,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 100,
                                       "type": "address",
                                       "value": "_statusHolder"
@@ -4613,9 +4468,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 102,
                               "type": "bool",
                               "value": "_newState"
@@ -4644,9 +4497,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -4667,9 +4518,7 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 27,
                               "type": "function (address,bool,uint256)",
                               "value": "StateChanged"
@@ -4681,9 +4530,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 100,
                               "type": "address",
                               "value": "_statusHolder"
@@ -4695,9 +4542,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 102,
                               "type": "bool",
                               "value": "_newState"
@@ -4709,9 +4554,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 249,
                               "type": "uint256",
                               "value": "now"
@@ -4788,9 +4631,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 156,
@@ -4805,9 +4646,7 @@
                   {
                     "attributes": {
                       "argumentTypes": null,
-                      "overloadedDeclarations": [
-                        null
-                      ],
+                      "overloadedDeclarations": [null],
                       "referencedDeclaration": 47,
                       "type": "modifier ()",
                       "value": "onlyOwner"
@@ -4833,9 +4672,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -4852,10 +4689,7 @@
                                   "typeString": "literal_string \"Status type cannot be an empty string.\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                250,
-                                251
-                              ],
+                              "overloadedDeclarations": [250, 251],
                               "referencedDeclaration": 251,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -4899,9 +4733,7 @@
                                       "isPure": false,
                                       "isStructConstructorCall": false,
                                       "lValueRequested": false,
-                                      "names": [
-                                        null
-                                      ],
+                                      "names": [null],
                                       "type": "bytes memory",
                                       "type_conversion": true
                                     },
@@ -4928,9 +4760,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 152,
                                           "type": "string memory",
                                           "value": "_statusType"
@@ -5008,9 +4838,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "uint256",
                           "type_conversion": false
                         },
@@ -5035,9 +4863,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 13,
                                   "type": "string storage ref[] storage ref",
                                   "value": "statusTypes"
@@ -5054,9 +4880,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 152,
                               "type": "string memory",
                               "value": "_statusType"
