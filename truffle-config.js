@@ -1,4 +1,7 @@
 module.exports = {
+  ens: {
+    enabled: false
+  },
   contracts_build_directory: "./app/src/contracts",
   networks: {
     development: {
