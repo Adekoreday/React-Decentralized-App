@@ -1,25 +1,11 @@
 import React, { useState } from "react"
-import { Formik, Form, useField } from "formik"
+import { Formik, Form } from "formik"
 import { drizzleReactHooks } from "@drizzle/react-plugin"
 import SimpleAlerts from "../../alert"
+import MyTextInput from "../../textInput"
 import * as Yup from "yup"
 import DashBoardLayout from "../../layout/dashboardLayout"
 import "./index.css"
-
-const MyTextInput = ({ label, ...props }) => {
-  const [field, meta] = useField(props)
-  return (
-    <>
-      <label className="label__container" htmlFor={props.id || props.name}>
-        {label}
-      </label>
-      <input className="text-input" {...field} {...props} />
-      <div className={meta.touched && meta.error ? "error_active" : "error_hidden"}>
-        {meta.error || "hello"}
-      </div>
-    </>
-  )
-}
 
 const StatusType = () => {
   const [stackId, setStackId] = useState(null)
@@ -37,10 +23,12 @@ const StatusType = () => {
 
     return (
       transactions[txHash] && (
-        <SimpleAlerts
-          severity={transactions[txHash].status}
-          message={`transaction ${transactions[txHash].status}`}
-        ></SimpleAlerts>
+        <div>
+          <SimpleAlerts
+            severity={transactions[txHash].status}
+            message={`transaction ${transactions[txHash].status}`}
+          ></SimpleAlerts>
+        </div>
       )
     )
   }

@@ -1,4 +1,5 @@
 import React, { useState, Suspense } from "react"
+import Proptypes from "proptypes"
 import Aside from "../../aside"
 import "./index.css"
 
@@ -14,4 +15,11 @@ const DashBoardLayout = (props) => {
   )
 }
 
+DashBoardLayout.proptypes = {
+  children: Proptypes.node.isRequired,
+}
+
+DashBoardLayout.defaultProps = {
+  children: <div></div>,
+}
 export default DashBoardLayout
