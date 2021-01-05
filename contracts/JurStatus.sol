@@ -18,6 +18,9 @@ contract JurStatus {
 
     /** Dynamic array holding the status types */
     string[] public statusTypes;
+    
+    /** Dynamic array holding all status created */
+    Status[] public statusLists;
 
     /** Mapping between the address of the Jur Status holders and their properties */
     mapping(address  => Status) public status;
@@ -52,6 +55,7 @@ contract JurStatus {
     onlyOwner {
         require(_statusHolder != address(0), "Please provide a valid address.");
         status[_statusHolder] = Status(now, true, statusTypes[_statusType]);
+        statusLists.push(status[_statusHolder]);
         statusCount++;
 
         emit StatusAdded(_statusHolder, now, statusTypes[_statusType]);
@@ -86,5 +90,27 @@ contract JurStatus {
     onlyOwner {
         require(bytes(_statusType).length != 0, "Status type cannot be an empty string.");
         statusTypes.push(_statusType);
+    }
+
+
+    /** To get the list of all status I added the following
+     * currently solidity does not support return of array except through an experimental feature {pragma experimental ABIEncoderV2;}
+     * which is not advisable for production due to known bugs..
+     * 
+    @dev getStatusListLength - function to let an admin get all statusList length
+    */
+    function getStatusListLength() public onlyOwner view returns (uint)
+      {
+        return statusLists.length;
+    }
+    
+    
+    /**
+    @dev getStatusListItem - function to let an admin get statusList item from the index we obtained above
+    */
+    function getStatusListItem(uint index) public onlyOwner view returns (uint, bool, string memory)
+      {
+       Status memory statusItem = statusLists[index];
+       return(statusItem.activationTime, statusItem.isActive, statusItem.statusType);
     }
 }

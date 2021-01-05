@@ -20,6 +20,7 @@ const Status = () => {
   const StatusForm = () => {
     return (
       <section className="status__container">
+        {/**use formik for forms to prevent re invention of the wheel */}
         <Formik
           initialValues={{
             statusType: 0,
