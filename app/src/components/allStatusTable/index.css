@@ -5,6 +5,6 @@
 
 @media screen and (max-width: 784px) {
   .table__section {
-    margin: 5rem 0rem;
+    margin: 5rem -3rem;
   }
 }

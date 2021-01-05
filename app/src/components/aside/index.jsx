@@ -25,7 +25,7 @@ const getAsideItems = (fields, pathname, toggle) => {
 const Aside = ({ toggleDashboard, toggle }) => {
   const pathname = useLocation().pathname
   return (
-    <div>
+    <aside>
       <div className={toggle ? "desktop__aside__container" : "desktop__aside__container__min"}>
         <div className="aside__header">
           <p className="aside__logo">Jur</p>
@@ -63,7 +63,7 @@ const Aside = ({ toggleDashboard, toggle }) => {
           </div>
         </div>
       </div>
-    </div>
+    </aside>
   )
 }
 
