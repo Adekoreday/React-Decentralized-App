@@ -5,7 +5,7 @@ import "./index.css"
 
 const AsideItem = ({ iconUrl, link, text, color }) => {
   return (
-    <Link to={link}>
+    <Link to={link} style={{ textDecoration: "none" }}>
       <div className="aside__item">
         <img className="aside__img" src={iconUrl}></img>
         <p style={{ color }}>{text}</p>

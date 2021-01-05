@@ -11,6 +11,14 @@
   flex-direction: column;
 }
 
-.dashboard__container--minified {
-  grid-template-columns: 10% 80%;
+@media screen and (max-width: 784px) {
+  .dashboard__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard__content {
+    position: relative;
+    display: block;
+    padding: 5rem;
+  }
 }

@@ -8,6 +8,9 @@
   flex-direction: column;
 }
 
+.mobile__aside__container {
+  display: none;
+}
 .text-input {
   border: 1px solid #85a5c5;
   box-sizing: border-box;
@@ -38,7 +41,7 @@
 }
 
 .status__container {
-  top: 30%;
+  top: 40%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -48,4 +51,24 @@
   color: #85a5c5;
   margin-bottom: 1rem;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 784px) {
+  .status__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile__aside__container {
+    display: block;
+  }
+  .form {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .form {
+    padding: 1rem 2rem;
+  }
 }
