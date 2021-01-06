@@ -13,6 +13,8 @@ Run the following
 > Truffle is the framework we'll use to help us easily manage and deploy our Solidity codes. 
 
 ```
+npm i -g truffle
+
 truffle develop
 
 ```
@@ -34,4 +36,23 @@ After deploying to our local blockchain then we run our smart contract test
 truffle test
 
 ```
+
+### Start The React/Drizzle App
+
+Install Metamask chrome extension
+
+[MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
+
+
+Run the Following
+
+```
+cd app/
+
+npm run start:dev
+
+```
+
+Open the browser and go to PORT 8080
+
 
