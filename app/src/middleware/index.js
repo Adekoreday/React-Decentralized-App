@@ -1,4 +1,4 @@
-import { toast } from 'react-toastify'
+import { toast } from "react-toastify"
 import { generateStore, EventActions } from "@drizzle/store"
 import drizzleOptions from "../drizzle"
 

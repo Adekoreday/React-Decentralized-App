@@ -4,7 +4,12 @@ import { useLocation } from "react-router-dom"
 import Proptypes from "proptypes"
 import fields from "./fields"
 import "./index.css"
-
+/**
+ * getAsideItems returns all aside items
+ * @param {Object} fields object holding description of all items in the aside component
+ * @param {String} pathname the current browser url used to track which pages to be rendered in the dashboard
+ * @param {Boolean} toggle toggle switch used to track state of the aside component
+ */
 const getAsideItems = (fields, pathname, toggle) => {
   return (
     <div>

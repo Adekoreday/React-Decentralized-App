@@ -9,6 +9,12 @@ const columns = [
   { field: "activationTime", headerName: "Activation Time", width: 200 },
   { field: "isActive", headerName: "Active", width: 200 },
 ]
+
+/**
+ *
+ * @param {Object} props the props that contains the data to be rendered
+ * by the material ui data grid table
+ */
 export default function DataTable({ data }) {
   return (
     <section className="table__section">

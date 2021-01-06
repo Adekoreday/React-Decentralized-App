@@ -3,6 +3,10 @@ import Proptypes from "proptypes"
 import Aside from "../../aside"
 import "./index.css"
 
+/**
+ *
+ * @param {Object} props the prop object holding component the layout wraps
+ */
 const DashBoardLayout = (props) => {
   const [toggle, setToggle] = useState(false)
   return (

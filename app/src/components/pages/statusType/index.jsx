@@ -7,6 +7,10 @@ import * as Yup from "yup"
 import DashBoardLayout from "../../layout/dashboardLayout"
 import "./index.css"
 
+/**
+ * useDrizzle enables us access our drizzle object used to perfom transactions with the smart contract
+ * useDrizzleState enables us to read from the contract
+ */
 const StatusType = () => {
   const [stackId, setStackId] = useState(null)
   const { useDrizzle, useDrizzleState } = drizzleReactHooks
@@ -22,6 +26,9 @@ const StatusType = () => {
     if (!txHash) return null
 
     return (
+      /**
+       * if the transaction completes then render tjr simple Alert to show the status of the transaction
+       */
       transactions[txHash] && (
         <div>
           <SimpleAlerts
@@ -32,6 +39,12 @@ const StatusType = () => {
       )
     )
   }
+
+  /**
+   *
+   * @param {name} name the name of our status type to be submitted
+   * the submit status sends request to addStatusType in our Jur smart contract
+   */
   const submitStatus = (name) => {
     const contract = drizzle.contracts.JurStatus
     // let drizzle know we want to call the `addStatusType` method with `value`
@@ -41,9 +54,16 @@ const StatusType = () => {
     setStackId(Id)
   }
 
+  /**
+   * StatusForm returns a form that used to create status type
+   */
   const StatusForm = () => {
     return (
       <section className="status__container">
+        {/**
+         * use yup for our input validation logic
+         * ensures the form doesnt submit if all validations are not passed.
+         */}
         <Formik
           initialValues={{
             statusType: "",
