@@ -1,4 +1,10 @@
 .table__section {
-    margin: 5rem 10rem;
-    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
+  margin: 5rem 10rem;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 784px) {
+  .table__section {
+    margin: 5rem -3rem;
+  }
 }

@@ -7,9 +7,7 @@ const DashBoardLayout = (props) => {
   const [toggle, setToggle] = useState(false)
   return (
     <section className="dashboard__container">
-      <Suspense fallback={<div>Loading...</div>}>
-        <Aside />
-      </Suspense>
+      <Aside toggleDashboard={() => setToggle(!toggle)} toggle={toggle} />
       <div className="dashboard__content">{props.children}</div>
     </section>
   )
