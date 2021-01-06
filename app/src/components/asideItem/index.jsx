@@ -3,6 +3,10 @@ import { Link } from "react-router-dom"
 import Proptypes from "proptypes"
 import "./index.css"
 
+/**
+ * The AsideItem acts as a link to each page on the dashboard
+ * @param {Object} props contains all required fields to render each aside
+ */
 const AsideItem = ({ iconUrl, link, text, color }) => {
   return (
     <Link to={link} style={{ textDecoration: "none" }}>

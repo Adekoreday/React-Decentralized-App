@@ -7,7 +7,7 @@ const AllStatus = () => {
   const { useDrizzle, useDrizzleState } = drizzleReactHooks
   const { useCacheCall, drizzle } = useDrizzle()
   const state = useDrizzleState((state) => state)
-  let count = 1;
+  let count = 1
   /**
    * The get All status uses drizzle to return all jur Status
    */
@@ -21,8 +21,9 @@ const AllStatus = () => {
       const itemkey = contract.methods["getStatusListItem"].cacheCall(i, {
         from: state.accounts[0],
       })
-      // couldnt useCacheCall here because the number of hooks have to be consistent
-      //on every re render according to react docs
+      // couldnt useCacheCall here because the number of hooks have to be consistent with hooks
+      //on every re render according to react docs.
+      // get each item in the data structure holding the jur status
       const item = state.contracts["JurStatus"]["getStatusListItem"][itemkey]
       if (item?.value) {
         const data = {
@@ -48,4 +49,3 @@ const AllStatus = () => {
 }
 
 export default AllStatus
-

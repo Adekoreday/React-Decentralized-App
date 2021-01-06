@@ -8,6 +8,8 @@ This repository consist of react application that consumes the jur status contra
 
 Getting Started
 
+Watch A brief intro  [SHORT DEMO VIDEO](https://www.loom.com/share/d970f55db6cb49b68a2831d02ceb5514)
+
 Run the following
 
 > Truffle is the framework we'll use to help us easily manage and deploy our Solidity codes. 

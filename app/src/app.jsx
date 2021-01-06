@@ -14,7 +14,11 @@ import "./index.css"
 
 const drizzle = new Drizzle(drizzleOptions, store)
 const { DrizzleProvider } = drizzleReactHooks
-
+/**
+ * App component serves as the entry for the entire application
+ * The drizzle Provider wrap around the whole app to enable drizzle to be available
+ * in the whole application.
+ */
 const App = () => {
   return (
     <DrizzleProvider drizzle={drizzle}>

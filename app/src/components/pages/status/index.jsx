@@ -5,6 +5,10 @@ import MyTextInput from "../../textInput"
 import * as Yup from "yup"
 import DashBoardLayout from "../../layout/dashboardLayout"
 
+/**
+ * useDrizzle enables us access our drizzle object used to perfom transactions with the smart contract
+ * useDrizzleState enables us to read from the contract
+ */
 const Status = () => {
   const { useDrizzle, useDrizzleState } = drizzleReactHooks
   const { drizzle } = useDrizzle()
@@ -20,7 +24,7 @@ const Status = () => {
   const StatusForm = () => {
     return (
       <section className="status__container">
-        {/**use formik for forms to prevent re invention of the wheel */}
+        {/**use formik for forms to create a new status */}
         <Formik
           initialValues={{
             statusType: 0,
@@ -37,6 +41,7 @@ const Status = () => {
         >
           {({ isSubmitting }) => (
             <Form className="form">
+              {/**MyTextInput is a custom component built untop formik input to submit values */}
               <MyTextInput
                 label="StatusType Index"
                 name="statusType"
