@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import DashBoardLayout from "../../layout/dashboardLayout"
 import { drizzleReactHooks } from "@drizzle/react-plugin"
 import AllStatusTable from "../../allStatusTable"

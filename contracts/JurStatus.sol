@@ -96,7 +96,7 @@ contract JurStatus {
     /** To get the list of all status I added the following
      * currently solidity does not support return of array except through an experimental feature {pragma experimental ABIEncoderV2;}
      * which is not advisable for production due to known bugs..
-     * 
+
     @dev getStatusListLength - function to let an admin get all statusList length
     */
     function getStatusListLength() public onlyOwner view returns (uint)
@@ -107,6 +107,9 @@ contract JurStatus {
     
     /**
     @dev getStatusListItem - function to let an admin get statusList item from the index we obtained above
+         * A nice to have would have been refactored the change state logic to keep the 
+         * statusList updated on status update but these seems outside the logic of the task as we are to only
+         * create statustype, status and get all status ):
     */
     function getStatusListItem(uint index) public onlyOwner view returns (uint, bool, string memory)
       {

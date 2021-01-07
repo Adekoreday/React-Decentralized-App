@@ -1,4 +1,5 @@
 module.exports = {
+  moduleDirectories: ["node_modules", "src"],
   moduleNameMapper: {
     "\\.(css|scss)$": "identity-obj-proxy",
   },
@@ -7,6 +8,6 @@ module.exports = {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
       "<rootDir>/jestConfig/__mocks__/fileTransformer.js",
   },
-  moduleFileExtensions: ["js", "jsx"],
+  moduleFileExtensions: ["js", "jsx", "json"],
   setupFilesAfterEnv: ["<rootDir>/jestConfig/setupTests.js"],
 }
