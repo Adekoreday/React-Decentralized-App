@@ -57,4 +57,5 @@ npm run start:dev
 
 Open the browser and go to PORT 8080
 
+I always love feedbacks ): do shoot me a mail at khord4eng@gmail.com.
 

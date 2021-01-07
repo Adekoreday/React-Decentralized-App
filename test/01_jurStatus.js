@@ -49,4 +49,22 @@ contract('JurStatus', function (accounts) {
 
     assert.equal((await jurStatus.status.call(status1)).isActive, false);
   });
+
+  it("3. Let's the admin get all status. ", async () => {
+    assert.equal((await jurStatus.getStatusListLength.call()), 1);
+  });
+
+  it("3. Does not let's any address other than the Jur admin to get status Length. ", async () => {
+    await assertFail(async () => {
+      await jurStatus.getStatusListLength({from: accounts[4]});
+  });
+  });
+/** Our current get All status does not get updated on status change as that was beyound the scope of this task i.e. update status
+ * we could refactor our status update logic to reflect this, kindly reach out to me if you want me to add this ):
+ * here we tested the status active state was what is added initially
+ */
+  it("3. Let's the admin get status at first Index. ", async () => {
+    var response = await jurStatus.getStatusListItem.call(0);
+    assert.equal(response[1], true);
+  });
 });
