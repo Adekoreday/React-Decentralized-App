@@ -1,10 +1,10 @@
-### Jur Status Smart Contract Challenge
+### React Smart Contract
 
-This repository consist of react application that consumes the jur status contract
+This repository consist of react application that consumes a typical smart contract running on ethereum blockchain
 
-- as an owner of the contract, I should be able to create a new Jur Status type
-- as an owner of the contract, I should be able to create a new Jur Status
-- as an owner of the contract, I should be able to see the list of Jur Statuses
+- as an owner of the contract, I should be able to create a new Status type
+- as an owner of the contract, I should be able to create a new  Status
+- as an owner of the contract, I should be able to see the list of Statuses
 
 Getting Started
 
@@ -57,5 +57,32 @@ npm run start:dev
 
 Open the browser and go to PORT 8080
 
-I always love feedbacks ): do shoot me a mail at khord4eng@gmail.com.
+### Tests
+
+to run unit test for the front end application
+
+> Major Pages Were tested, You could find them in 
+
+ app/src/components/pages
+
+```
+cd app/
+npm run test
+
+```
+
+### Tools
+
+- React
+- Drizzle
+- Truffle Suite
+- Solidity
+
+
+I always love feedbacks/contribution )
+
+khord4eng@gmail.com.
+@AdeyemiAdekore2 (twitter)
+
+
 
